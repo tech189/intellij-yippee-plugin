@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>Yippee</id>
+    <name>Yippee</name>
+    <version>0.0.1</version>
+    <vendor url="https://github.com/tech189/intellij-yippee-plugin">tech189</vendor>
+    <description><![CDATA[
+        This IntelliJ plugin plays the "yippee" sound effect every time your tests pass! 🎉
+        It was hacked together based on Dmitry Kandalov's <a href="https://github.com/dkandalov/friday-mario">Friday Mario</a> plugin which adds sound effects to common IDE actions.
+        ]]></description>
+
+    <!-- see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html -->
+    <idea-version since-build="201.5985"/>
+
+    <!-- see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends optional="true" config-file="modules.java.xml">com.intellij.modules.java</depends>
+
+    <actions>
+        <group id="FridayMario.Menu" text="Friday Mario" popup="true">
+            <add-to-group anchor="last" group-id="ToolsMenu"/>
+            <action class="fridaymario.ToggleActionSounds" id="FridayMario.ToggleActionSounds" text="Sounds on Actions">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt shift m"/>
+            </action>
+            <action class="fridaymario.ToggleBackgroundMusic" id="FridayMario.StartStop" text="Background Music"/>
+        </group>
+    </actions>
+
+    <applicationListeners>
+        <listener class="fridaymario.IntelliJAppComponent" topic="com.intellij.ide.AppLifecycleListener"/>
+    </applicationListeners>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="fridaymario.Settings"/>
+        <checkinHandlerFactory implementation="fridaymario.listeners.VcsActions$MyCheckinHandlerFactory"/>
+    </extensions>
+
+</idea-plugin>
