@@ -48,7 +48,7 @@ intellij {
 	)
 	println("Using ide version: ${ideVersion}")
 	version ideVersion
-	pluginName "friday-mario"
+	pluginName "yippee"
 	plugins = ["java"]
 	downloadSources true
 	sameSinceUntilBuild false
