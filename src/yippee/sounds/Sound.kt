@@ -1,4 +1,4 @@
-package fridaymario.sounds
+package yippee.sounds
 
 import com.intellij.openapi.diagnostic.Logger
 import java.io.BufferedInputStream

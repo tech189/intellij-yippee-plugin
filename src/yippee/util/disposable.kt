@@ -1,4 +1,4 @@
-package fridaymario.util
+package yippee.util
 
 import com.intellij.openapi.Disposable
 import com.intellij.openapi.util.Disposer

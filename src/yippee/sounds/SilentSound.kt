@@ -1,4 +1,4 @@
-package fridaymario.sounds
+package yippee.sounds
 
 class SilentSound(
     bytes: ByteArray,

@@ -18,20 +18,20 @@
     <actions>
         <group id="FridayMario.Menu" text="Friday Mario" popup="true">
             <add-to-group anchor="last" group-id="ToolsMenu"/>
-            <action class="fridaymario.ToggleActionSounds" id="FridayMario.ToggleActionSounds" text="Sounds on Actions">
+            <action class="yippee.ToggleActionSounds" id="FridayMario.ToggleActionSounds" text="Sounds on Actions">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt shift m"/>
             </action>
-            <action class="fridaymario.ToggleBackgroundMusic" id="FridayMario.StartStop" text="Background Music"/>
+            <action class="yippee.ToggleBackgroundMusic" id="FridayMario.StartStop" text="Background Music"/>
         </group>
     </actions>
 
     <applicationListeners>
-        <listener class="fridaymario.IntelliJAppComponent" topic="com.intellij.ide.AppLifecycleListener"/>
+        <listener class="yippee.IntelliJAppComponent" topic="com.intellij.ide.AppLifecycleListener"/>
     </applicationListeners>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="fridaymario.Settings"/>
-        <checkinHandlerFactory implementation="fridaymario.listeners.VcsActions$MyCheckinHandlerFactory"/>
+        <applicationService serviceImplementation="yippee.Settings"/>
+        <checkinHandlerFactory implementation="yippee.listeners.VcsActions$MyCheckinHandlerFactory"/>
     </extensions>
 
 </idea-plugin>

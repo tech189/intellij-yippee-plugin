@@ -1,4 +1,4 @@
-package fridaymario
+package yippee
 
 import com.intellij.ide.AppLifecycleListener
 import com.intellij.openapi.Disposable
@@ -8,10 +8,10 @@ import com.intellij.openapi.project.ProjectManager
 import com.intellij.openapi.project.ProjectManagerListener
 import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.util.SystemInfo
-import fridaymario.listeners.*
-import fridaymario.sounds.SilentSound
-import fridaymario.sounds.Sounds
-import fridaymario.util.*
+import yippee.listeners.*
+import yippee.sounds.SilentSound
+import yippee.sounds.Sounds
+import yippee.util.*
 
 class IntelliJAppComponent: AppLifecycleListener {
     private var soundPlayer: ActionListeningSoundPlayer? = null

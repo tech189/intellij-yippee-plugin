@@ -1,4 +1,4 @@
-package fridaymario.listeners
+package yippee.listeners
 
 import com.intellij.openapi.Disposable
 import com.intellij.openapi.project.Project

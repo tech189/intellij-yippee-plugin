@@ -1,4 +1,4 @@
-package fridaymario.listeners
+package yippee.listeners
 
 import com.intellij.ide.AppLifecycleListener
 import com.intellij.openapi.Disposable
@@ -6,7 +6,7 @@ import com.intellij.openapi.compiler.CompilationStatusListener
 import com.intellij.openapi.compiler.CompileContext
 import com.intellij.openapi.compiler.CompilerTopics
 import com.intellij.openapi.project.Project
-import fridaymario.util.appMessageBus
+import yippee.util.appMessageBus
 
 class InitJavaCompilation {
     init {

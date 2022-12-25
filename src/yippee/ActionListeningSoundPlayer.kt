@@ -1,8 +1,8 @@
-package fridaymario
+package yippee
 
-import fridaymario.listeners.*
-import fridaymario.sounds.Sound
-import fridaymario.sounds.Sounds
+import yippee.listeners.*
+import yippee.sounds.Sound
+import yippee.sounds.Sounds
 
 class ActionListeningSoundPlayer(private val sounds: Sounds, private val listener: Listener):
 //    Compilation.Listener, Refactoring.Listener, UnitTests.Listener, VcsActions.Listener, AllActions.Listener {

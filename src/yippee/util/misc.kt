@@ -1,4 +1,4 @@
-package fridaymario.util
+package yippee.util
 
 import com.intellij.notification.Notification
 import com.intellij.notification.NotificationType

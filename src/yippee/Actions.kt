@@ -1,4 +1,4 @@
-package fridaymario
+package yippee
 
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.ToggleAction
